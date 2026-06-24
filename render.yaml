@@ -3,7 +3,7 @@ services:
     name: admexo-lead-gen
     env: node
     plan: free
-    buildCommand: npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm run start
     envVars:
       - key: GOOGLE_SERVICE_ACCOUNT_EMAIL
